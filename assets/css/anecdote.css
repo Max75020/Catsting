@@ -56,16 +56,13 @@
     color: #FF7F57;
 }
 
-.anecdote a {
+.anecdote p {
     width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration-line: underline;
-    color: #000000;
+    text-align: center;
     margin-top: 100px;
 }

@@ -1,3 +1,19 @@
+function sendRequest(url) {
+    return new Promise((resolve, reject) => {
+        let requete = new XMLHttpRequest();
+        requete.open("GET", url);
+        requete.onload = function () {
+            if (requete.status === 200) {
+                let response = JSON.parse(requete.responseText);
+                resolve(response);
+            } else {
+                reject("Une erreur est survenue");
+            }
+        };
+        requete.send();
+    });
+};
+
 function toggleMobileMenu(menu) {
     menu.classList.toggle("open");
 }
