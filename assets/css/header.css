@@ -68,6 +68,7 @@ header nav ul li {
     position: relative;
     margin-left: auto;
     right: 20px;
+
 }
 
 .dark-light i {
@@ -78,19 +79,14 @@ header nav ul li {
     transition: all 0.3s ease;
 }
 
-.dark-light i.sun {
-    opacity: 0;
+.dark-light i.bxs-sun {
+    opacity: 1;
     pointer-events: none;
 }
 
 .dark-light.active i.sun {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.dark-light.active i.moon {
     opacity: 0;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 #hamburger-icon {
